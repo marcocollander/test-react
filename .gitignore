@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # ide
-.idea/
-.vscode/
-*.xml
+.idea
+.vscode
+.xml
