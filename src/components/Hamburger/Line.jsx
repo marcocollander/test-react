@@ -1,6 +1,6 @@
-const Line = ({bgc}) => (
+const Line = ({bgc, click, show='showL'}) => (
   <>
-    <p className='line' style={{backgroundColor: bgc}} >
+    <p className={`line ${show}`} style={{backgroundColor: bgc}} onClick={click}>
     </p>
   </>
 );
