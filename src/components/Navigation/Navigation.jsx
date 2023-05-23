@@ -1,16 +1,20 @@
-import Link from "./Link";
+const Navigation = () => {
+  const list = [['/', 'Strona domowa'], ['#', 'O mnie'], ['#', 'Blog'], ['#', 'Kontakt']];
 
-const Navigation = () => (
-  <>
-    <nav className='menu'>
-      <ul className='menu__list'>
-        <Link href ='/' destination ='Strona domowa' />
-        <Link href = '#' destination = 'O mnie'/>
-        <Link href = '#' destination = 'blog'/>
-        <Link href = '#' destination= 'kontakt'/>
+  const listItems = list.map((item, i) => {
+    return (
+      <li className='menu__item' key={i}>
+        <a className='menu__link' href={item[0]}>{item[1]}</a>
+      </li>);
+  });
+
+  return (
+    <nav className="menu">
+      <ul className="menu__list">
+        {listItems}
       </ul>
     </nav>
-  </>
-);
+  );
+};
 
 export default Navigation;

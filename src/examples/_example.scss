@@ -1,0 +1,16 @@
+.example {
+  width: 50%;
+  margin: 50px auto;
+
+  &__paragraph {
+    font-size: 3rem;
+  }
+
+  &__button {
+    margin-top: 50px;
+    padding: 10px 30px;
+    font-size: 3rem;
+  }
+}
+
+
